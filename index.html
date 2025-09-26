@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Veridata</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Veridata – Data Nutrition Labels</h1>
+    <p>Upload your dataset to generate a Nutrition Label</p>
+ 
+    <input type="file" id="fileInput" />
+    <button onclick="uploadFile()">Upload & Analyze</button>
+    <button id="downloadBtn" onclick="downloadLabel()" style="display:none; background: #28a745;">Download PDF Label</button>
+ 
+    <pre id="output"></pre>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
+ 

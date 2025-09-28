@@ -20,7 +20,7 @@ async function uploadFile() {
   formData.append("file", fileInput.files[0]);
  
   try {
-    const response = await fetch("http://127.0.0.1:8000/upload-dataset/", {
+    const response = await fetch("https://veridata-backend.onrender.com/upload-dataset/", {
       method: "POST",
       body: formData,
     });
@@ -53,7 +53,7 @@ async function downloadLabel() {
         return;
     }
  
-    const downloadUrl = `http://127.0.0.1:8000/download-label/?key=${currentDownloadKey}&filename=${currentFileName}`;
+    const downloadUrl = `https://veridata-backend.onrender.com/download-label/?key=${currentDownloadKey}&filename=${currentFileName}`;
  
     try {
         const response = await fetch(downloadUrl);
